@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- <p>Kongnyuy Sidonne Vernyuy</p> -->
+            <ul>
+                <li><a href="#about">About </a></li>
+                <li><a href="#project">Projects </a></li>
+                <li><a href="#skills">Skills </a></li>
+                <li><a href="#contact">Contact </a></li>
+                <!-- <li><a href="#about">About Section</a></li> -->
+            </ul>
+        </nav>
+    </header>
+    <!-- <hr> -->
+    <main class="container">
+        <div class="cont1">
+            <section class="pf">
+                <h1 class="h1">
+                    <span class="nowrap">Hello, I am</span>
+                    <span class="nowrap">Kongnyuy sidonne</span>
+                </h1>
+            </section>
+        </div>
+        <div class="aboutbox">
+            <section id="about" class="about"><br>
+                <h3>About Me </h3><br><br><hr><br><br>
+                <div class="block right">
+                    <figure>
+                        <img src="./profiles/profile1.png" alt="profile picture" width="400" height="380">
+                    </figure>
+                </div>
+                <div class="block left">
+                    <p>I am a Highly motivated and detail-oriented web developer with a passion for creating innovative, user-friendly, and efficient digital solutions that exceed expectations.</p>
+                    <br><br><br>
+                    <p class="p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati corrupti ipsam fuga alias qui sunt ducimus vel maxime perspiciatis minima dignissimos, ea beatae earum sed delectus perferendis tenetur ut enim! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui inventore earum veniam nam sunt quos quasi ipsa dolores! Nemo, incidunt? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem modi error officiis inventore sit cum!</p>
+                </div>
+            </section>
+        </div>
+        
+        <div class="projects">
+            <br><br><hr><br><br>
+            <h3>Projects</h3><br><br><hr>
+            <section>
+                <article id="project" class="cont2">
+                    <figure class="box">
+                        <img src="./icons/logo 1.png" alt="project 1" class="image" width="150" height="100">
+                        <!-- <figcaption>Saledrie</figcaption> -->
+                        <div class="desc"><a href="https://www.google.com">Loremipsum</a></div>
+                    </figure>
+                </article>
+                <article id="project" class="cont2">
+                    <figure class="box">
+                        <img src="./icons/chatintro.png" alt="project 1" class="image" width="150" height="50">
+                        <!-- <figcaption>ChaTintro</figcaption> -->
+                        <div class="desc"><a href="https://www.google.com">ChaTintro</a></div>
+                    </figure>
+                </article>
+                <article id="project" class="cont2">
+                    <figure class="box">
+                        <img src="./icons/logo 2.png" alt="project 1" class="image" width="150" height="100">
+                        <!-- <figcaption>Celencia</figcaption> -->
+                        <div class="desc"><a href="https://www.google.com">Celencia</a></div>
+                    </figure>
+                </article>
+                <article id="project" class="cont2">
+                    <figure class="box">
+                        <img src="./icons/Wiki.png" alt="project 1" class="image" width="100" height="90">
+                        <!-- <figcaption>WikiculTure</figcaption> -->
+                        <div class="desc"><a href="https://www.google.com">WikiculTure</a></div>
+                    </figure>
+                </article>
+            </section>
+        </div>
+    
+        <div class="skills">
+            <section id="skills" class="skills1">
+                <h3>Skills</h3><br><br><hr><br><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus doloribus amet maxime veniam numquam?</p>                <ul>
+                <br><br>        
+                <section class="cont3">
+                    <div class="meter">
+                        <span style="width: 80%;"><span class="progress">80%</span></span>
+                    </div>
+                    <p class="right">HTML 5</p>
+                </section>
+                <section class="cont3">
+                    <div class="meter">
+                        <span style="width: 60%;"><span class="progress">60%</span></span>
+                    </div>
+                    <p class="right">CSS</p>
+                </section>
+                <section class="cont3">
+                    <div class="meter">
+                        <span style="width: 40%;"><span class="progress">40%</span></span>
+                    </div>
+                    <p class="right">JavaScript</p>
+                </section>
+                <section class="cont3">
+                    <div class="meter">
+                        <span style="width: 70%;"><span class="progress">70%</span></span>
+                    </div>
+                    <p class="right">PHP</p>
+                </section>
+            </section><br><br><br>
+        </div>
+        
+        <section id="contact">
+            <h3>Contact</h3><br><br><hr>
+            <div class="form mleft">
+                <p>
+                    <h3>KONGNYUY Sidonne</h3>
+                </p>
+                <p>
+                    <!-- <label for="number">Number</label> -->
+                    <a href="tel:+237 682-431-802">545-555-8888</a>
+                </p>
+                <p>
+                    <!-- <label for="number">E-mail Address</label> -->
+                    <a href="mailto:kongnyuy2002@gmail.com">my email address</a>
+                </p>
+                <p>
+                    <address>Quartier Nylon-Bastos (Aurelia Palace)</address>
+                </p>
+            </div>
+        
+            <!-- <div class="form mright"> -->
+                <form action="submit" method="post" class="form-group">
+                    <input type="text" name="name" id="name" placeholder="Name*" class="input-inline">
+                    <input type="email" name="email" id="email" placeholder="Email*" class="input-inline">
+                    <input type="tel" name="phone" id="phone" placeholder="Telephone*" class="input-block">
+                    <input type="text" name="address" id="address" placeholder="Address*" class="input-block">
+                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message*" ></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            <!-- </div> -->
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>
+            &copy;Developed and designed by Sidonne
+        </p>
+    </footer>
+</body>
+</html>
