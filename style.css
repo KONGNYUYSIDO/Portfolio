@@ -55,6 +55,19 @@ nav ul li a:hover, li a:focus {
     text-decoration: double;
 }
 
+@media only screen and (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
 /* style for the name intro */
 
 .cont1 {
@@ -156,31 +169,44 @@ h3 {
 
 /* styling skills */
 
-/* .cont3 {
-    overflow: auto;
-} */
 
- .skills1 {
-    padding-bottom: 15%;
- }
 
-.meter {
+.skill-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.left-skill .right-skill {
+    width: 100%;
+    padding: 20px;
+}
+
+.skill-list {
     height: 20px;
-    width: 60%;
+    width: 400px;
     margin: 15px;
-    float: left;
-    position: relative;
     background-color: slategray;
     font-size: 1rem;
     text-align: center;
     color: aliceblue;
 }
 
-.meter span {
+.skill-list span {
     display: block;
     border-radius: 5px;
-    /* padding-left: -4px; */
     height: 100%;
+}
+
+.left-skill p {
+    float: right;
+    color: green;
+}
+
+.right-skill p {
+    float: right;
+    color: green;
 }
 
 .progress {
@@ -199,96 +225,104 @@ h3 {
     }
 }
 
-.cont3 .right {
-    float: right;
-    width: 35%;
-    padding: 10px;
+@media only screen and (max-width: 768px) {
+    .left-skill .right-skill {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .skill-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .skill-list span {
+        width: 100%;
+        margin: 10px 0;
+    }
 }
+
+
 
 /* Styling Contact */
 
-.form {
-    width: 30vw;
-    height: 50vw;
-    padding: 2rem;
-    /* justify-content: center;
-    align-content: center; */
+
+.contact-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
 }
 
-.mleft {
-    float: left;
-    margin-right: 1.5rem;
-    margin-left: 1rem;
+.left-contact {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-.mleft p {
-    line-height: 5.5;
-    margin-bottom: 20px;
+.left-contact div {
+    margin-bottom: 50px;
 }
 
-.mleft p a {
-    text-decoration: none;
-    color: black;
-}
-
-.mright {
-    float: right;
-    top: 40px;
-    margin-left: 1.5rem;
-    margin-right: 2rem;
+.right-contact {
+    width: 50%;
+    align-items: flex-end;
+    padding: 20px;
 }
 
 .form-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 10px;
+    display: block;
 }
 
-.input-inline {
-    margin: 20px;
-    height: 40px;
-    border: transparent;
-    background-color: aliceblue;
-    flex-basis: 45%;
-}
-
-
-.input-block {
+.form-group input, .form-group textarea {
     width: 100%;
-    height: 40px;
-    margin: 10px;
+    padding: 10px;
     border: transparent;
-    background-color: aliceblue;
-}
-
-textarea {
-    width: 100%;
-    margin: 10px;
-    border: transparent;
-    background-color: aliceblue;
 }
 
 button {
     width: 50%;
     height: 50px;
+    margin-bottom: 30px;
     background-color: green;
     color: aliceblue;
-
 }
+
+@media only screen and (max-width: 768px) {
+    .left-contact, .right-contact {
+        width: 100%;
+    }
+
+    .left-contact {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .form-group input, .form-group textarea {
+        padding: 5px;
+    }
+
+    button {
+        padding: 5px 10px;
+    }
+}
+
+
 
 /* Styling footer */
 
 .footer {
-    position: fixed;
     background-color: slategray;
-    bottom: 0;
-    width: 100%;
-    padding-top: 20px;
+    text-align: center;
+    clear: both;
 }
 
 footer p {
-    text-align: center;
-    height: 100px;
+    /* text-align: center; */
     color: aliceblue;
-    align-items: center;
+    /* align-items: center; */
 }

@@ -90,67 +90,90 @@
             </section>
         </div>
     
-        <div class="skills">
+        <!-- <div class="skills"> -->
             <section id="skills" class="skills1">
                 <h3>Skills</h3><br><br><hr><br><br>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt delectus doloribus amet maxime veniam numquam?</p>                <ul>
-                <br><br>        
-                <section class="cont3">
-                    <div class="meter">
-                        <span style="width: 80%;"><span class="progress">80%</span></span>
+                <br><br>  
+                <div class="skill-block">
+                    <div class="left-skill">
+                        <div class="skill-list">
+                            <span style="width: 80%;"><span class="progress">80%</span></span>
+                            <p>HTML 5</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 60%;"><span class="progress">60%</span></span>
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 40%;"><span class="progress">40%</span></span>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 70%;"><span class="progress">70%</span></span>
+                            <p>PHP</p>
+                        </div>
                     </div>
-                    <p class="right">HTML 5</p>
-                </section>
-                <section class="cont3">
-                    <div class="meter">
-                        <span style="width: 60%;"><span class="progress">60%</span></span>
+                    <div class="right-skill">
+                        <div class="skill-list">
+                            <span style="width: 50%;"><span class="progress">50%</span></span>
+                            <p>Photoshop</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 60%;"><span class="progress">60%</span></span>
+                            <p>Canvas</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 90%;"><span class="progress">90%</span></span>
+                            <p>Figma</p>
+                        </div>
+                        <div class="skill-list">
+                            <span style="width: 70%;"><span class="progress">70%</span></span>
+                            <p>Illustrator</p>
+                        </div>
                     </div>
-                    <p class="right">CSS</p>
-                </section>
-                <section class="cont3">
-                    <div class="meter">
-                        <span style="width: 40%;"><span class="progress">40%</span></span>
-                    </div>
-                    <p class="right">JavaScript</p>
-                </section>
-                <section class="cont3">
-                    <div class="meter">
-                        <span style="width: 70%;"><span class="progress">70%</span></span>
-                    </div>
-                    <p class="right">PHP</p>
-                </section>
+                </div>      
             </section><br><br><br>
-        </div>
+        <!-- </div> -->
         
         <section id="contact">
             <h3>Contact</h3><br><br><hr>
-            <div class="form mleft">
-                <p>
-                    <h3>KONGNYUY Sidonne</h3>
-                </p>
-                <p>
-                    <!-- <label for="number">Number</label> -->
-                    <a href="tel:+237 682-431-802">545-555-8888</a>
-                </p>
-                <p>
-                    <!-- <label for="number">E-mail Address</label> -->
-                    <a href="mailto:kongnyuy2002@gmail.com">my email address</a>
-                </p>
-                <p>
-                    <address>Quartier Nylon-Bastos (Aurelia Palace)</address>
-                </p>
+            <di class="contact-block">
+                <div class="left-contact">
+                    <div>
+                        <span>KONGNYUY</span> Sidonne Marth
+                    </div>
+                    <div>
+                        <span>Phone:</span><a href="tel:+237 682-431-802">545-555-8888</a>
+                    </div>
+                    <div>
+                        <span>Email:</span><a href="mailto:kongnyuy2002@gmail.com">example@gmail.com</a>
+                    </div>
+                    <div>
+                        <span>Phone:</span><address>Quartier Nylon-Bastos</address>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form action="submit" method="post">
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Name*">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" id="email" placeholder="Email*">
+                        </div>
+                        <div class="form-group"></div>
+                            <input type="tel" name="phone" id="phone" placeholder="Telephone*">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="address" id="address" placeholder="Address*">
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="5" placeholder="Message*" ></textarea>
+                        </div>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-        
-            <!-- <div class="form mright"> -->
-                <form action="submit" method="post" class="form-group">
-                    <input type="text" name="name" id="name" placeholder="Name*" class="input-inline">
-                    <input type="email" name="email" id="email" placeholder="Email*" class="input-inline">
-                    <input type="tel" name="phone" id="phone" placeholder="Telephone*" class="input-block">
-                    <input type="text" name="address" id="address" placeholder="Address*" class="input-block">
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Message*" ></textarea>
-                    <button type="submit">Submit</button>
-                </form>
-            <!-- </div> -->
         </section>
     </main>
 
