@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Personal Portfolio</title>
 </head>
@@ -43,52 +44,30 @@
             </section>
         <!-- </div> -->
         
-        <div class="projects">
             <br><br><hr><br><br>
             <h3>Projects</h3><br><br><hr>
-            <!-- <section>
-                <article id="project" class="cont2">
-                    <figure class="box">
-                        <img src="./icons/logo 1.png" alt="project 1" class="image" width="150" height="100">
-                        
-                        <div class="desc"><a href="https://www.google.com">Loremipsum</a></div>
-                    </figure>
-                </article>
-                <article id="project" class="cont2">
-                    <figure class="box">
-                        <img src="./icons/chatintro.png" alt="project 1" class="image" width="150" height="50">
-                        
-                        <div class="desc"><a href="https://www.google.com">ChaTintro</a></div>
-                    </figure>
-                </article>
-                <article id="project" class="cont2">
-                    <figure class="box">
-                        <img src="./icons/logo 2.png" alt="project 1" class="image" width="150" height="100">
-                        
-                        <div class="desc"><a href="https://www.google.com">Celencia</a></div>
-                    </figure>
-                </article>
-                <article id="project" class="cont2">
-                    <figure class="box">
-                        <img src="./icons/Wiki.png" alt="project 1" class="image" width="100" height="90">
-                        
-                        <div class="desc"><a href="https://www.google.com">WikiculTure</a></div>
-                    </figure>
-                </article>
-            </section> -->
-            <section id="project">
-                <div class="image-grid">
-                    <img src="./icons/logo 1.png" alt="Loremipsum">
-                    <div class="image-text">Loremipsum</div>
-                    <img src="./icons/chatintro.png" alt="ChaTintro">
-                    <div class="image-text">ChaTintro</div>
-                    <img src="./icons/logo 2.png" alt="Celencia">
-                    <div class="image-text">ChaTintro</div>
-                    <img src="./icons/Wiki.png" alt="WikiculTure">
-                    <div class="image-text">WikiculTure</div>
+            <div class="slideshow-container" id="project">
+                <div class="slides">
+                    <img src="./icons/logo 1.png" alt="Loremipsum" width="100%">
                 </div>
-            </section>
-        </div>
+                <div class="slides">
+                    <img src="./icons/chatintro.png" alt="ChaTintro" width="70%">
+                </div>
+                <div class="slides">
+                    <img src="./icons/logo 2.png" alt="Celencia" width="100%">
+                </div>
+                <div class="slides">
+                    <img src="./icons/Wiki.png" alt="WikiculTure" width="50%">
+                </div>
+                <a class="prev" onclick="plusSlide(-1)"><i class="fa-solid fa-less-than"></i></a>
+                <a class="next" onclick="plusSlide(1)"><i class="fa-solid fa-greater-than"></i></a>
+            </div>
+            <div style="text-align: center">
+                <span class="dot" onclick="activeSlide(1)"></span>
+                <span class="dot" onclick="activeSlide(2)"></span>
+                <span class="dot" onclick="activeSlide(3)"></span>
+                <span class="dot" onclick="activeSlide(4)"></span>
+            </div>
     
         <!-- <div class="skills"> -->
             <section id="skills" class="skills1">
@@ -182,5 +161,7 @@
             &copy;Developed and designed by Sidonne
         </p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
