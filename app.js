@@ -1,7 +1,7 @@
-
+let interval;
 let activeIndex = 1;     //initialize the index of the activeslide to 1
-showSlides(activeIndex);    //display the initial slide
-showSlides();
+// showSlides(activeIndex);    //display the initial slide
+
 
 //function to navigate between previous and next slides 
 function plusSlide(index) {
@@ -14,15 +14,15 @@ function activeSlide(index) {
 }
 
 //function to display the present slide
-function showSlides(index) {
+function showSlides() {
     let slides = document.getElementsByClassName('slides');
     let dots = document.getElementsByClassName('dot');
 
-    if (index > slides.length) {
+    if (activeIndex > slides.length) {
         activeIndex = 1;     // checking if the index is greater than the length of the slides the index should go back to 1
     }
 
-    if (index < 1) {
+    if (activeIndex < 1) {
         activeIndex = slides.length;   //if the index is less than 1 it should go back to the last slide
     }
 
@@ -38,5 +38,57 @@ function showSlides(index) {
 
     dots[activeIndex - 1].classList.add('active');
 
-    setTimeout(showSlides, 2000);
+    activeIndex++;
+
 }
+
+// showSlides();
+
+function startSlide() {
+    interval = setInterval(showSlides, 4000);  // Call showSlides every 2 seconds
+}
+
+// Stop the automatic slideshow
+function stopSlide() {
+    clearInterval(interval);  // Clear the interval to stop the slideshow
+}
+
+
+function zoomSlide(event) {
+    const slides = document.getElementsByClassName('slides');
+
+    for (let slide of slides) {
+        slide.classList.remove('zoomed');
+    }
+
+    if (event.target.classList.contains('slides')) {
+        event.target.classList.add('zoomed');
+        document.body.classList.add('blur-background');
+    }
+}
+
+function removeZoom() {
+    const slides = document.getElementsByClassName('slides');
+
+    for (let slide of slides) {
+        slide.classList.remove('zoomed');
+    }
+
+    document.body.classList.remove('blur-background');
+}
+
+
+
+
+// Add event listeners to handle hover and click
+const slideshowContainer = document.getElementById('slideshow-container'); 
+
+slideshowContainer.addEventListener('click', zoomSlide);
+document.body.addEventListener('click', function(event) {
+    if (!event.target.classList.contains('slides')) {
+        removeZoom();
+    }
+});
+
+// Call showSlides when the page loads
+startSlide(activeIndex);  // Start the slideshow when the page loads
